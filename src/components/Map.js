@@ -1,11 +1,12 @@
 import { Component } from "react";
+import "./Map.css"
 
 class Map extends Component {
   render() { 
     return (
-      <div data-testid="Map">
-        <img src="default.jpg" alt="default.jpg" />
-      </div>
+      <div className="MapBox" data-testid="Map">
+        <img src="images/none.png" alt="No Store Selected" />
+      </div> 
     );
   }
 }

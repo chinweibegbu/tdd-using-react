@@ -1,6 +1,9 @@
+import React from "react";
+import "./Button.css";
+
 function Button () {
   return (
-    <button>ButtonText</button>
+    <button className="location-button">Store</button>
   );
 }
  

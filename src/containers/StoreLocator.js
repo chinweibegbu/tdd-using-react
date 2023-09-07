@@ -7,7 +7,9 @@ function StoreLocator() {
     return (
         <div data-testid="StoreLocator">
             <Header />
-            <Button /> <Button />
+            <div>
+                <Button /> <Button />
+            </div>
             <Map />
         </div>
     );

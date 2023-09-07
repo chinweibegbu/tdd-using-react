@@ -14,4 +14,10 @@ describe("Map", function () {
         const images = screen.getAllByRole("img");
         expect(images.length).toBe(1);
     })
+
+    it('displays the none app when no params are given',() => {
+        render(<Map />);
+        const defaultMap = screen.getAllByRole("img", {src: "images/none.png"});
+        expect(defaultMap.length).toBe(1);
+    })
 })
