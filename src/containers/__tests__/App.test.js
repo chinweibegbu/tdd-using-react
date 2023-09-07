@@ -1,8 +1,17 @@
+import ReactDOM from 'react-dom'
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", function () {
+
+  it('renders without crashing', () => {
+    const div = document.createElement('div');
+    render(<App />, div);
+  });
+
+  it('renders a StoreLocator', () => {
+    render(<App />);
+    expect(screen.getByTestId("StoreLocator")).toBeInTheDocument();
+  })
+
 });
