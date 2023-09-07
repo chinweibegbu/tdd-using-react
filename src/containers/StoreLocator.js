@@ -8,7 +8,9 @@ function StoreLocator() {
         <div data-testid="StoreLocator">
             <Header />
             <div>
-                <Button /> <Button />
+                <Button location='Portland' />
+                <Button location='Astoria' />
+                <Button />
             </div>
             <Map />
         </div>

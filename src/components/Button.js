@@ -1,9 +1,9 @@
 import React from "react";
 import "./Button.css";
 
-function Button () {
+function Button ({location}) {
   return (
-    <button className="location-button">Store</button>
+    <button className="location-button">{location ? location : "All Locations"}</button>
   );
 }
  
