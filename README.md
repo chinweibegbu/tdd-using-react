@@ -12,7 +12,7 @@ TDD Using React @ Andela-Pluralsight-Meta React Learning Program 2023
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Week 2 "Test-driven Development Using React 16" ([course link](https://app.pluralsight.com/library/courses/test-driven-development-react/table-of-contents))
 
-## Projet Description
+## Project Description
 Summary: Single-page interactive store map
 
 This project will be bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
