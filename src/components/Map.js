@@ -1,14 +1,12 @@
-import { Component } from "react";
-import "./Map.css"
+import React from "react";
+import "./Map.css";
 
-class Map extends Component {
-  render() { 
-    return (
-      <div className="MapBox" data-testid="Map">
-        <img src="images/none.png" alt="No Store Selected" />
-      </div> 
-    );
-  }
+function Map({imageName}) {  
+  return (
+    <div className="MapBox" data-testid="Map">
+      <img src={'images/'+imageName} alt={imageName} />
+    </div>
+  );
 }
- 
+
 export default Map;

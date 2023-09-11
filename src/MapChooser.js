@@ -1,9 +1,6 @@
-function MapChooser(locationName) {
-    if (!locationName) {
-        locationName = "default"
-    }
-    const imageName = locationName + ".jpg";
-    return ( imageName );
+function mapChooser(locationName) {
+    const imageName = locationName.toLowerCase() + ".png";
+    return imageName;
 }
 
-export default MapChooser;
+export default mapChooser;

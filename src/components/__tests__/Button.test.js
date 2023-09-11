@@ -15,10 +15,18 @@ describe("Button", function () {
     })
 })
 
-describe("When a location is passed to it", () => {
+describe("When a location is not passed to it", () => {
     it("displays the location", () => {
         render(<Button location={undefined}/>)
         const locationName = screen.getByRole("button", {class: "location-button"})
         expect(locationName.innerHTML).toEqual('All Locations');
+    })
+})
+
+describe("When a location is passed to it", () => {
+    it("displays the location", () => {
+        render(<Button location='Portland'/>)
+        const locationName = screen.getByRole("button", {class: "location-button"})
+        expect(locationName.innerHTML).toEqual('Portland');
     })
 })

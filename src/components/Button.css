@@ -5,3 +5,7 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.location-button:active, .location-button:focus {
+    background-color: darkgray;
+}

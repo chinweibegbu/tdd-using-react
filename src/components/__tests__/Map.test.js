@@ -19,4 +19,10 @@ describe("Map", function () {
         const defaultMap = screen.getAllByRole("img", {src: "images/none.png"});
         expect(defaultMap.length).toBe(1);
     })
+
+    it('displays the map imageName passed to it', ()=>{
+        render(<Map imageName='Portland' />);
+        const testMap = screen.getAllByRole("img", {src: "images/portland.png"});
+        expect(testMap.length).toBe(1);
+    })
 })

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Button.css";
 
-function Button ({location}) {
+function Button ({handleClick, location}) {
   return (
-    <button className="location-button">{location ? location : "All Locations"}</button>
+    <button className="location-button" value={location ? location : 'None'} onClick={handleClick}>{location ? location : "All Locations"}</button>
   );
 }
  

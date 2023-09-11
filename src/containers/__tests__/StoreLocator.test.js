@@ -13,10 +13,10 @@ describe("StoreLocator", function () {
         expect(screen.getByTestId("Header")).toBeInTheDocument();
     })
 
-    it('renders two buttons', () => {
+    it('renders three buttons', () => {
         render(<StoreLocator />);
         const buttons = screen.getAllByRole("button");
-        expect(buttons.length).toBe(2);
+        expect(buttons.length).toBe(3);
     })
 
     it('renders a Map', () => {
@@ -24,3 +24,10 @@ describe("StoreLocator", function () {
         expect(screen.getByTestId("Map")).toBeInTheDocument();
     })
 })
+
+describe('chooseMap', ()=> {
+    it('updates currentMap using the location passed to it', ()=>{
+        render(<StoreLocator />);
+        expect(screen.getByTestId("Map")).toBeInTheDocument();
+    })
+});
